@@ -1,31 +1,29 @@
 
 
 #bagImage{
-    background: url('/img/bag.png') center no-repeat;
-    background-size: 50%;
-    width: 213px;
-    height: 270px;
+    background: url('../img/bag.png') center no-repeat;
+    background-size: 80%;
+    width: 300px;
+    height: 600px;
     margin: 0 auto;
-    /* border: 1px solid; */
 
 }
 #bagImage.burst{
-    background: url('/img/bag-burst.png') center no-repeat;
-    background-size: 50%;
+    background: url('../img/bag-burst.png') center no-repeat;
+    background-size: 80%;
     
 }
 #bagHealth{
-    /* border: 1px solid; */
-    width: 115px;
+    border: 1px solid;
+    width: 200px;
     margin: 0 auto 10px auto;
 }
 #bagHealth div{
     background-color: brown;
-    height: 10px;
+    height:20px;
 }
 #controls{
     margin: 0 auto;
-    /* border: 1px solid; */
     width: 117px;
     
 }
