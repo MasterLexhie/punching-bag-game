@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Punching Bag Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+         <!-- bag image -->
+        <div id="bagImage" :class="{burst:healthEnd}"></div>
+        
+        <!-- bag health -->
+        <div id="bagHealth">
+            <div :style="{width: bagHealth + '%'}"></div>
+        </div>
+        
+        <!-- controls for punching -->
+        <div id="controls">
+            <button @click="punch" v-show="!healthEnd">Punch</button>
+            <button @click="restart">Restart</button>
+        </div>
+       
+    </div>
+   
+    <script src="js/app.js"></script>
+</body>
+</html>
